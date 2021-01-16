@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import Button from '../../components/base/Button';
 import Image from '../../components/base/Image';
-import Banner from '../../assets/images/banner-home.svg';
 
 const Track = () => {
   // const [productDetail, setProductDetail] = useState({});
