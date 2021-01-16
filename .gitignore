@@ -20,6 +20,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-projeto-loja.code-workspace
 .vscode
 package-lock.json
+.eslintcache
