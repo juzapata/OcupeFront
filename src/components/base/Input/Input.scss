@@ -1,0 +1,27 @@
+.input-div {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 1em;
+
+    .input-label {
+        color: #124A9B;
+        font-weight: 100;
+    }
+    .input-itself {
+        max-width: 277px;
+        height: 40px;
+        border-radius: 8px;
+        border-color: #124A9B;
+        border-width: thin;
+        color:#124A9B;
+        font-weight: 400;
+
+        ::placeholder{
+            color: #808080;
+            font-weight: 100;
+        }
+
+    }
+}
