@@ -6,9 +6,9 @@ const Button = (props) => {
             type={props.type} 
             className={`btn ${props.classNameBtn}`} 
             onClick={props.onClick}>
-            {props.text}
             <i className={props.icon}></i>
-          </button>
+            {props.text}           
+        </button>
 }
 
 export default Button;
