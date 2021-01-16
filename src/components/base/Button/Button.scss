@@ -27,6 +27,7 @@
         margin: 13px 0 0px;
         font-size: 14px;
         background-color: darken($color: $blue, $amount: 15);
+        text-align: start;
         @media (min-width: 1280px){
             width: 60%;
             margin: 20px 0 0px;
