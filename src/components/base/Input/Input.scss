@@ -3,25 +3,29 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    font-size: 1em;
-
+   
     .input-label {
-        color: #124A9B;
+        color: $blue;
         font-weight: 100;
+        font-size: 18px;
     }
     .input-itself {
-        max-width: 277px;
-        height: 40px;
+        border: 1px solid $blue;
         border-radius: 8px;
-        border-color: #124A9B;
-        border-width: thin;
-        color:#124A9B;
+        color: $blue;
         font-weight: 400;
+        background-color: $white;
+        padding: 15px 20px;
 
-        ::placeholder{
-            color: #808080;
-            font-weight: 100;
+        @media (min-width: 1024px){
+            width: 239px;
+            height: 40px;
+            padding: 5px;
         }
 
+        ::placeholder{
+            color: $text-block-gray;
+            font-weight: 100;
+        }
     }
 }
