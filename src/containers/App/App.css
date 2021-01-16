@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  /* color: $base-black;
+  background-color: $background-rose; */
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  color: initial;
+  list-style: none;
+  text-decoration: none;
+  /* color: $base-black; */
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+#root {
+  min-height: 100vh;
+  margin-top: 60px;
+  position: relative;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 1024px){
+    width: 1000px;
+  }
+  @media (min-width: 1280px){
+    width: 1200px;
+  }
+}
