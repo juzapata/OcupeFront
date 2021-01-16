@@ -1,31 +1,38 @@
 .input-div {
     font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-   
     .input-label {
         color: $blue;
         font-weight: 100;
         font-size: 18px;
-    }
-    .input-itself {
-        border: 1px solid $blue;
-        border-radius: 8px;
-        color: $blue;
-        font-weight: 400;
-        background-color: $white;
-        padding: 15px 20px;
-
-        @media (min-width: 1024px){
-            width: 239px;
-            height: 40px;
-            padding: 5px;
+        display: flex;
+        flex-direction: column;
+    
+        .input-itself {
+            position: relative;
+            border: 1px solid $blue;
+            border-radius: 8px;
+            color: $blue;
+            font-weight: 400;
+            background-color: $white;
+            padding: 15px 20px;
+    
+            @media (min-width: 1024px){
+                width: 239px;
+                height: 40px;
+                padding: 5px;
+            }
+    
+            ::placeholder{
+                color: $text-block-gray;
+                font-weight: 100;
+            }
+        } 
+        
+        i {
+            position: absolute;
+            align-self: flex-end;
         }
-
-        ::placeholder{
-            color: $text-block-gray;
-            font-weight: 100;
-        }
     }
+    
+    
 }
