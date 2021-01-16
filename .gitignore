@@ -1,6 +1,5 @@
-node_modules
-.eslintcache
-
+# dependencies
+/node_modules
 /.pnp
 .pnp.js
 
