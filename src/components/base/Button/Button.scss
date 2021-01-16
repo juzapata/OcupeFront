@@ -1,0 +1,92 @@
+// .btn {
+//     @include btn('Barlow Semi Condensed', 300);
+//     &__primary {
+//       @include btn-type(100%, 8px 20px, $pink);
+//       border: 1px solid $pink;
+//       &-buy {
+//         font-size: 16px;
+//         line-height: 16px;
+//       }
+//       &:hover {
+//         background-color: lighten($color: $pink, $amount: 25)
+//       }
+//       &--bigger {
+//         padding: 15px 20px;
+//         display: block;
+//         font-size: 18px;
+//         @media (min-width: 1024px){
+//           width: 250px;
+//           height: 55px;
+//           padding: 5px;
+//           font-size: 18px;
+//           border-radius: 8px;
+//         }
+//       }
+//     }
+//     &__secondary {
+//       @include btn-type(100%, 10px, $white);
+//       height: 55px;
+//       margin: 30px 0 100px;
+//       font-size: 24px;
+//       background-color: darken($color: $pink, $amount: 15);
+//       @media (min-width: 1280px){
+//         width: 250px;
+//         margin: 0;
+//         padding: 5px;
+//         font-size: 18px;
+//       }
+//       &:hover {
+//         background-color: $pink
+//       }
+//       & i {
+//         margin-left: 10px;
+//         font-size: 22px;
+//       }
+//       &--green {
+//         background-color: darken($color: $green, $amount: 15);
+//         @media (min-width: 1024px){
+//           margin: 0;
+//           line-height: 22px;
+//         }
+//         &:hover {
+//           background-color: $green;
+//         }
+//       }
+//     }
+//     &__icon {
+//       font-size: 20px;
+//       color: $base-black;
+//       @media (min-width: 1024px){
+//         font-size: 22px;
+//       }
+//       &:hover {
+//         color: lighten($color: $base-black, $amount: 25)
+//       }
+//       &--pink {
+//         color: $pink;
+//         &:hover {
+//           color: lighten($color: $pink, $amount: 10)
+//         }
+//       }
+//       &--quantity {
+//         font-size: 14px;
+//         & i {
+//           font-size: 10px;
+//         }
+//       }
+//       &--remove {
+//         display: flex;
+//         padding-top: 5px;
+//         color: $red;
+//         &:hover {
+//           color: lighten($color: $red, $amount: 25)
+//         }
+//         & i {
+//           font-size: 16px;
+//         }
+//       }
+//     }
+//     &--card {
+//       padding: 0 10px 15px;
+//     }
+//   }
