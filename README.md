@@ -1,106 +1,70 @@
-# Ocupe
-Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
+# Getting Started with Create React App
 
-### Link da Aplicação:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [Ocupe](em breve...)
+## Available Scripts
 
-## Índice
+In the project directory, you can run:
 
-* [Como utilizar](#como-utilizar-em-desenvolvimento)
-* [Principais Tecnologias](#principais-tecnologias)
-* [Organização/Planejamento](#organização/planejamento)
-* [Definição do produto](#definição-do-produto)
-* [Personas](#personas)
-* [Histórias dos usuários](#histórias-dos-usuários)
-  * [Requisitos Obrigatórios](#requisitos-obrigatórios)
-  * [Definição de pronto](#definição-de-pronto)
-* [Protótipo](#protótipo)
-* [Roadmap](#roadmap)
+### `yarn start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Como Utilizar em Desenvolvimento
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
 
-  ### install no terminal
+### `yarn test`
 
-  ```` 
-    yarn install
-  ````
-  ou
-  ````
-    npm install
-  ````
-  ### build
-  ```` 
-    yarn start
-  ````
-  ou
-  ````
-    npm start
-  ````
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Principais Tecnologias
+### `yarn build`
 
-* React
-* Hooks
-* Sass
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-## Organização/Planejamento
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
- * [Trello](https://trello.com/b/xszfx32j/hackaton-ccr);
- * [GitHub Project](https://github.com/juzapata/OcupeFront/projects);
- * Reuniões Diárias/Hora;
- * Mentorias;
- * Pair Programming;
-  
-## Definição do produto
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Ocupe é uma aplicação web, pensada em mobile first, voltado para Programa de mentoria de carreira e qualificação para jovens de 18 a 24 anos em busca do seu primeiro emprego. Através de etapas sequenciais a serem desbloqueadas, os usuários mentorandos vão ganhando insumos durante sua jornada na área de interesse.
+### `yarn eject`
 
-Etapas a serem concluídas:
-- Teste vocacional
-- Acompanhamento Psicológico
-- Feedback recebido
-- Mentoria de carreira por voluntário, na área de interesse
-- Feedback recebido
-- Candidate-se à vagas
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-Média de 4 semanas - a depender da disponibilidade de mentorias - a partir das etapas de interação com a aplicação o mentorando vai se aproximando do objetivo final: encontrar uma área de atuação no mercado de trabalho e vagas existentes.
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-A Comunicação entre mentor e mentorado: Contato por WhatsApp e email.
-Monetização: Empresas que tenham interesse em contratar pessoas no seu primeiro emprego, estagiários e afins. Empresas que queiram fazer parcerias de cursos profissionalizantes com a aplicação etc.
-Divulgação: redes sociais, influenciar educacionais, boca a boca.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-## Personas
-[Personas](em breve...)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Critérios de Avaliação dos Projetos
-**Os Projetos apresentados serão avaliados segundo as seguintes premissas:**
-1. Adequação ao tema, desafio e objetivo propostos;
-2. Criatividade e disrupção da solução;
-3. Aplicabilidade do sistema para solucionar os problemas atinentes ao tema;
-4. Qualidade e avanço no desenvolvimento do protótipo conceitual;
-5. Viabilidade de execução real da solução desenvolvida.
+## Learn More
 
-## Histórias dos usuários 
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-  **Requisitos Obrigatórios**
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-1. Eu como usuário gostaria ter...
+### Code Splitting
 
-### Definição de pronto
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-* Implementar as funcionalidades até  .
+### Analyzing the Bundle Size
 
-## Protótipo
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-O protótipo da Ocupe, pode ser visualizado no link abaixo:
+### Making a Progressive Web App
 
-[Protótipo da aplicação](...breve)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Roadmap
-  * Contato com as Empresas (monetização);
-  * Cadastros do Mentores;
-  * Publicidade de Cursos (monetização);
-  * Links de compartilhamentos em redes sociais;
-  * Implementação de testes.
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `yarn build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
