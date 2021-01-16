@@ -1,0 +1,10 @@
+.image {
+  &__banner {
+    margin-top: 15px;
+    min-height: 409px;
+    @media (min-width: 1024px){
+      width: 300px;
+      min-height: 379px;
+    }
+  }
+}
