@@ -4,23 +4,15 @@ import Button from '../../components/base/Button';
 import Input from '../../components/base/Input';
 import Image from '../../components/base/Image';
 import Cta from '../../components/base/Cta';
+import { Link } from 'react-router-dom';
+
 
 const SignIn = () => {
-  // const [productDetail, setProductDetail] = useState({});
-  // const [chosenSize, setChosenSize] = useState('');
-  // let history = useHistory();
-  // const dispatch = useDispatch();
-
-
-  // const handleProductSize = (e) => {
-  //   setChosenSize(e.target.value)
-  // }
-
-  // useEffect(() => {
-  //   let productDetail = productSelected[0];
-  //   setProductDetail(productDetail)
-  // }, [productSelected])
-
+  const handleLogin = (e) => {
+    // let inputSearchValue = e.target.value; 
+    // setInputValue(inputSearchValue)   
+  }
+  
   return (    
     <div className="sign__group">
       <Image
@@ -39,16 +31,20 @@ const SignIn = () => {
           placeholder="mínimo 6 caracteres"
           type="password"
         />
-        <Button 
+        <Link to="/home">
+          <Button 
           type="submit"
           classNameBtn="btn__primary"
-          text="Entrar"
-        />
-        <Cta
+          text="Entrar"/>
+        </Link>
+
+        <Link  to="/register">
+          <Cta
           classNameCta="cta__primary"
-          href="https://www.google.com/"
           text="Cadastre-se"
-        />
+          />
+        </Link>
+        
       </form>
     </div>
   )
