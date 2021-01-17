@@ -7,14 +7,16 @@ import Cta from '../../components/base/Cta';
 import { Link } from 'react-router-dom';
 
 const initialValues = {
+  nome: "",
+  endereco: "",
   email: "",
   senha: "",
 }
 
-const SignIn = () => {
+const RegisterIn = () => {
   const [values, setValues] = useState(initialValues);
 
-  const handleLogin = (e) => { 
+  const handleInputChange = (e) => { 
     const { name, value } = e.target;
     
     setValues({
@@ -23,7 +25,7 @@ const SignIn = () => {
     });
     console.log(values)
   }
-  
+
   return (    
     <div className="sign__group">
       <Image
@@ -33,29 +35,43 @@ const SignIn = () => {
       />
       <form className="sign__form">
         <Input
+          label="Nome"
+          placeholder="nome"
+          type="text"
+          value={values.nome}
+          name="nome"
+          onChange= {handleInputChange}/>
+        <Input
+          label="Endereço"
+          placeholder="endereço"
+          type="text"
+          value={values.endereco}
+          name="endereco"
+          onChange= {handleInputChange}/>
+        <Input
           label="E-mail"
           placeholder="seuemail@exemplo.com"
           type="email"
           value={values.email}
           name="email"
-          onChange= {handleLogin}/>
+          onChange= {handleInputChange}/>
         <Input
           label="Senha"
           placeholder="mínimo 6 caracteres"
           type="password"
           value={values.senha}
           name="senha"
-          onChange= {handleLogin}/>
+          onChange= {handleInputChange}/>
         <Link to="/home">
           <Button 
           type="submit"
           classNameBtn="btn__primary"
-          text="Entrar"/>
-        </Link>
+          text="Cadastar"
+        /></Link>
         <Cta
-        classNameCta="cta__primary"
-        text="Cadastre-se"
-        href="/register"
+          classNameCta="cta__primary"
+          text="Voltar ao Login"
+          href="/"
         />
         
       </form>
@@ -63,4 +79,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn;
+export default RegisterIn;

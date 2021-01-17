@@ -14,6 +14,7 @@ const Input = (props) => {
           aria-required="true"
           placeholder={props.placeholder} 
           onChange={props.onChange}
+          name={props.name}
       />
       <i className={props.icon}></i>
     </label> 
