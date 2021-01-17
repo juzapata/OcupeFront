@@ -1,22 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from '../../components/base/Image';
 import Button from '../../components/base/Button';
 import CardContact from '../../components/CardContact';
 
-const CardInfo = (props) => {
+const CardInfo = ({mentor}) => {
+  const [mentorDetail, setMentorDetail] = useState({});
   const [showCardContact, setShowCardContact] = React.useState(false);
   const onClick = () => setShowCardContact(true);
 
+  useEffect(() => {
+    let mentorData = mentor[0];
+    setMentorDetail(mentorData)
+  }, [mentor]);
+
   return (
-    <div className="card">
+    <>
+    {
+      mentorDetail !== undefined 
+    ? <div className="card">
       <div className="card__header">
         <Image
           classNameImage="image__photo-mentor"
           src="./mentor-photo.jpg"
-          alt="Foto do mentor"/>
+          alt={`Foto de ${mentorDetail.name}`}/>
         <div className="card__header-title">
-          <h2>Maria Inês Arantes</h2>
-          <h2><span>Musicista</span></h2>
+          <h2>{mentorDetail.name}</h2>
+          <h2><span>{mentorDetail.profession}</span></h2>
         </div>
       </div>
       <p className="card__text">
@@ -31,6 +40,9 @@ const CardInfo = (props) => {
       />
       {showCardContact ? <CardContact /> : false}      
     </div>
+    : false
+    }
+    </>
   ) 
 }
 
