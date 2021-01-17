@@ -1,19 +1,22 @@
 import React from 'react';
 
+import Image from '../../components/base/Image';
 import Navbar from '../../containers/Navbar';
 import Footer from '../../containers/Footer';
-import SearchList from '../../containers/SearchList';
 
-const Search = () => {
+const VocationalTest = () => {
   return (
     <>
     <Navbar/>
     <div className="container">
-      <SearchList />
+      <Image
+        classNameImage="image__done"
+        src='/done.png'
+      ></Image>
     </div>
     <Footer />
     </>
   )
 }
 
-export default Search;
+export default VocationalTest;

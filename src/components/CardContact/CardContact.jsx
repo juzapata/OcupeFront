@@ -14,11 +14,10 @@ const CardContact = (props) => {
   const hrefAgenda = `http://www.google.com/calendar/event?action=TEMPLATE&text=Mentoria&dates=${date}&details=Event%20Details%20Here&location=${locationExample}`;
 
   return (
-    <>
     <ul className="contact__list">
       <li className="contact__list-item">
         <Cta 
-          href={ hrefWhatsapp }
+          href={hrefWhatsapp}
           classNameCta="cta__secondary"
           icon="cta__icon fab fa-whatsapp" 
           text="11 99999-9999"/>
@@ -38,12 +37,6 @@ const CardContact = (props) => {
           text="agende seu horário de mentoria"/>
       </li>
     </ul>
-    <Cta 
-    href="https://www.google.com.br/" 
-    classNameCta="cta__secondary cta__secondary--back"
-    icon="cta__icon fas fa-chevron-left" 
-    text="Voltar"/>
-    </>
   ) 
 }
 

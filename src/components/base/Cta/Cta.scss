@@ -11,30 +11,15 @@
   &__secondary {
     @include cta-type(100%, 0, $success-green);
     @include font (14px, 400, auto);
+    display: flex;
     
     &--back {
-      margin-top: 16px;
+      margin-top: 24px;
       color: $text-block-gray;
     }
   }
   &__icon {
     margin-right: 12px;
     font-size: 18px;
-    &--footer {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none;
-      width: min-content;
-      align-self: self-start;
-      color: $blue;
-      font-size: 12px;
-      & i {
-        font-size: 24px;
-        padding: 10px 0 8px 0;
-      }          
-    }
   }
 }
