@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import Login from './Login';
-import MapSearch from './MapSearch';
 import Register from './Register';
 import VocationalTest from './VocationalTest';
 import Psychologist from './Psychologist';
@@ -38,10 +37,6 @@ const Routes = () => (
 
     <Route path="/mentor/:mentorCode">
       <MentorInfo />
-    </Route>
-
-    <Route path="/map">
-      <MapSearch />
     </Route>
   </Switch>
 );

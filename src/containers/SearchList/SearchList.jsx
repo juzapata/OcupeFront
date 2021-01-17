@@ -4,19 +4,19 @@ import { useHistory } from "react-router-dom";
 import Title from '../../components/base/Title';
 import Input from '../../components/base/Input';
 import ListItem from '../../components/base/ListItem';
-import Button from '../../components/base/Button';
 import Map from '../../containers/Map';
 
 const SearchList = () => {
   const [inputValue, setInputValue] = useState('');
   const [mentores, setMentores] = useState([]);
+  const [mentored, setMentored] = useState([]);
   const [listSearch, setListSearch] = useState([]);
   let history = useHistory();  
 
   useEffect(() => {
     async function fetchData() {
       try {
-        await fetch('https://ocupe-back-end.herokuapp.com/ocupe/get-mentors')
+        await fetch(`https://ocupe-back-end.herokuapp.com/ocupe/get-mentors`)
           .then((res) => res.json())
           .then(data => setMentores(data.mentores));
       } catch (e) {
@@ -30,13 +30,25 @@ const SearchList = () => {
       mentor.profession.toLowerCase().includes(inputValue.toLowerCase())
       )
     setListSearch(filterInput);
+
   }, [inputValue, mentores]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        await fetch('https://ocupe-back-end.herokuapp.com/ocupe/get-mentored')
+          .then((res) => res.json())
+          .then(data => setMentored(data.mentorados));
+      } catch (e) {
+          console.error(e);
+      }
+    };
+    fetchData();
+  }, []);
 
   const [toggleSearch, setToggleSearch] = useState(false);
   const onClickToggleSearchList = () => setToggleSearch(false);
   const onClickToggleSearchMap = () => setToggleSearch(true);
-  const [colorToggle, setColor] = useState('orange');
-
 
   const handleListSearch = (e) => {
     let inputSearchValue = e.target.value; 
@@ -46,7 +58,6 @@ const SearchList = () => {
   const handleMentorCode = (mentorCode) => {
     history.push('/mentor/' + mentorCode);
   }
-
 
   return (
     <>
@@ -77,7 +88,7 @@ const SearchList = () => {
       <ul className="mentor__list">
         {listSearch.map(mentor => <ListItem mentor={mentor} key={mentor.id} onClick={() => handleMentorCode(mentor.contact.email)} />)} 
       </ul> :
-      <Map />
+      <Map mentoredAddress={mentored[0].address} />
      } 
     </>
   )

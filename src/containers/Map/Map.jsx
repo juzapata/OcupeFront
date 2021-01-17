@@ -1,39 +1,46 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
-const Map = () => {
+const Map = (props) => { 
 
-    const mentores = [
-        {mentor: 'Matheus', address: [-23.59245137135599, -46.639434269634904]},
-        {mentor: 'Mariana', address: [-23.596546521787857, -46.6358959141827]}
-    ];
-  
+  const [mentorsData, setMentorsData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        await fetch('https://ocupe-back-end.herokuapp.com/ocupe/get-mentors')
+          .then((res) => res.json())
+          .then(data => setMentorsData(data.mentores));
+      } catch (e) {
+          console.error(e);
+      }
+    };
+    fetchData();
+  }, [mentorsData]);
+
     return (
-      <MapContainer center={[-23.596063267424462, -46.62912682952263]} zoom={13} scrollWheelZoom={false} style={{
+      <MapContainer center={props.mentoredAddress} zoom={13} scrollWheelZoom={false} style={{
             height:"400px",
             width: "100%"}}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={[-23.596063267424462, -46.62912682952263]} style={{color: '#F9B29C'}} >
+          <Marker position={props.mentoredAddress} style={{color: '#F9B29C'}} >
             <Popup>
               Sua localização
             </Popup>
-          </Marker>
-          {mentores.map((el, i) =>{
-            
-            console.log(typeof el.address);
-            return(
-             <Marker position={Object.values(el.address)} key={i}>
-            <Popup>
-              Casa do ${el.mentor}
+            </Marker>
+            {mentorsData.map((mentor, i) => {
+              return(
+                <Marker position={Object.values(mentor.address)} key={i}>
+                <Popup>
+                Casa do ${mentor.name}
             </Popup>
           </Marker>)  
           })}
-          
       </MapContainer>  
     ) 
-  }
-  
-  export default Map;
+}
+
+export default Map;
