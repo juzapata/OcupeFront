@@ -1,35 +1,23 @@
 .btn {
     @include btn('Roboto', 300);
     &__primary {
-      @include btn-type(100%, 8px 20px, $white);
-      border: 1px solid $blue;
+      @include btn-type(100%, $white);
       margin: 25px 0 0px;
+      font-size: 18px;
+      background-color: $blue;
+      border-radius: 8px;
       &:hover {
-        border: 1px solid $hover-blue;
         background-color: lighten($color: $hover-blue, $amount: 0);
-      }
-      &--bigger {
-        padding: 15px 20px;
-        display: block;
-        font-size: 18px;
-        background-color: $blue;
-        @media (min-width: 1024px){
-          width: 250px;
-          height: 55px;
-          padding: 5px;
-          font-size: 18px;
-          border-radius: 8px;
-        }
       }
     }
     &__secondary {
-        @include btn-type(100%, 10px, $white);
+        @include btn-type(100%, $white);
         height: 40px;
         margin: 13px 0 0px;
         font-size: 14px;
         background-color: darken($color: $blue, $amount: 15);
         text-align: start;
-        @media (min-width: 1280px){
+        @media (min-width: 768px){
             width: 60%;
             margin: 20px 0 0px;
             font-size: 18px;
@@ -45,7 +33,7 @@
         }
         &--success-green {
             background-color: darken($color: $success-green, $amount: 10);
-            @media (min-width: 1024px){
+            @media (min-width: 768px){
             line-height: 22px;
             }
             &:hover {
@@ -54,7 +42,7 @@
         }
         &--block-gray {
             background-color: darken($color: $background-block-gray, $amount: 10);
-            @media (min-width: 1024px){
+            @media (min-width: 768px){
             line-height: 22px;
             }
             &:hover {
@@ -65,7 +53,7 @@
     &__icon {
     font-size: 24px;
     color: $blue;
-        @media (min-width: 1024px){
+        @media (min-width: 768px){
             font-size: 28px;
         }
         &:hover {
