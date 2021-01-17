@@ -1,54 +1,40 @@
 .cta {
-    &__primary {
-      @include cta-type(100%, 0, $blue);
-      @include font (14px, 700, auto);
+  &__primary {
+    @include cta-type(100%, 0, $blue);
+    @include font (14px, 700, auto);
+    text-align: center;
+    &:hover {
+      color: $hover-blue;
+      text-decoration: underline;
+    }
+  }
+  &__secondary {
+    @include cta-type(100%, 0, $success-green);
+    @include font (14px, 400, auto);
+    
+    &--back {
+      margin-top: 16px;
+      color: $text-block-gray;
+    }
+  }
+  &__icon {
+    margin-right: 12px;
+    font-size: 18px;
+    &--footer {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: center;
       text-align: center;
-      &:hover {
-        color: $hover-blue;
-        text-decoration: underline;
-      }
+      text-decoration: none;
+      width: min-content;
+      align-self: self-start;
+      color: $blue;
+      font-size: 12px;
+      & i {
+        font-size: 24px;
+        padding: 10px 0 8px 0;
+      }          
     }
-    &__secondary {
-      @include cta-type(100%, 0, $success-green);
-      @include font (14px, 400, auto);
-
-      &--back {
-        margin-top: 36px;
-        color: $text-block-gray;
-      }
-    }
-    &__icon {
-      margin-right: 12px;
-      font-size: 18px;
-      &--footer {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-        text-align: center;
-        text-decoration: none;
-        width: min-content;
-        align-self: self-start;
-        color: $blue;
-        font-size: 12px;
-        & i {
-          font-size: 24px;
-          padding: 10px 0 8px 0;
-        }          
-      }
-      &--card-contact {
-        @include font (18px, 500, 20px);
-        color: $success-green;
-        text-decoration: none;
-        margin-top: 18px;
-        margin-left: 5px;
-        &:hover {
-          text-decoration: underline;
-          color: $success-green;
-        }
-        & i {
-          margin-right: 5px;
-        }
-      }
-    }
+  }
 }
