@@ -4,7 +4,7 @@ const Cta = (props) => {
   return <a 
             id={props.id} 
             href={props.href} 
-            className={`btn ${props.classNameCta}`} 
+            className={`${props.classNameCta}`} 
             onClick={props.onClick}>
             <i className={props.icon}></i>
             {props.text}           
