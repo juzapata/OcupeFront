@@ -3,6 +3,7 @@
     &__primary {
       @include btn-type(100%, 8px 20px, $white);
       border: 1px solid $blue;
+      margin: 25px 0 0px;
       &:hover {
         border: 1px solid $hover-blue;
         background-color: lighten($color: $hover-blue, $amount: 0);

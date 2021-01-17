@@ -13,6 +13,12 @@
     color: $color;
     border-radius: 8px;
   }
+
+  @mixin cta-type ($width, $padding, $color) {
+    width: $width;
+    padding: $padding;
+    color: $color;
+  }
   
   @mixin font ($font-size, $font-weight, $line-height) {
     font-size: $font-size;
