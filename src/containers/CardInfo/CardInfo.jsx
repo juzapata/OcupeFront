@@ -7,17 +7,19 @@ const CardInfo = ({mentor}) => {
   const [mentorDetail, setMentorDetail] = useState({});
 
   useEffect(() => {
-    let mentorDetail = mentor[0];
-    setMentorDetail(mentorDetail)
+    let mentorData = mentor[0];
+    setMentorDetail(mentorData)
   }, [mentor]);
 
-
   return (
-    <div className="card">
+    <>
+    {
+      mentorDetail !== undefined 
+    ? <div className="card">
       <div className="card__header">
         <Image
           classNameImage="image__photo-mentor"
-          src="./user.jpg"
+          src="./mentor-photo.jpg"
           alt={`Foto de ${mentorDetail.name}`}/>
         <div className="card__header-title">
           <h2>{mentorDetail.name}</h2>
@@ -25,7 +27,7 @@ const CardInfo = ({mentor}) => {
         </div>
       </div>
       <p className="card__text">
-        {mentorDetail.resume}
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas sit, odio dolores exercitationem quo? Blanditiis, deserunt doloremque in quod at fuga quas totam doloribus adipisci Rerum, eius voluptate voluptatibus officiis id necessitatibus, consequuntur quibusdam et ipsm assumenda eveniet voluptatem vitae. Veritatis!"     
       </p>
       <Button 
         type="submit"
@@ -35,7 +37,10 @@ const CardInfo = ({mentor}) => {
       />
       <CardContact />
     </div>
-    )
-  }
+    : false
+    }
+    </>
+  ) 
+}
 
 export default CardInfo;
