@@ -14,7 +14,6 @@
       height: 40px;
       margin: 13px 0 0px;
       font-size: 14px;
-      background-color: darken($color: $blue, $amount: 15);
       text-align: start;
       @media (min-width: 1280px){
           width: 60%;
@@ -27,7 +26,7 @@
       }
       & i {
           margin-right: 13px;
-          font-size: 22px;
+          font-size: 20px;
           vertical-align: sub;
       }
       &--success-green {
@@ -50,7 +49,7 @@
       }
     }
     &__icon {
-    font-size: 24px;
+    font-size: 12px;
     color: $blue;
         @media (min-width: 1024px){
             font-size: 28px;
@@ -69,19 +68,39 @@
               font-size: 24px;
             }
         }
-        &--card-contact {
-          @include font (18px, 500, 20px);
-          color: $success-green;
+        &--footer {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          justify-content: center;
+          text-align: center;
           text-decoration: none;
-          margin-top: 18px;
-          margin-left: 5px;
-          &:hover {
-            text-decoration: underline;
-            color: $success-green;
-          }
+          width: min-content;
+          align-self: self-start;
+          // border-left: 1px solid $blue;
+
+          // &:first-child {
+          //   border: none;
+          // }
+
           & i {
-            margin-right: 5px;
-          }
+            font-size: 24px;
+            padding: 10px 0 8px 0;
+          }          
+        }
+      &--card-contact {
+        @include font (18px, 500, 20px);
+        color: $success-green;
+        text-decoration: none;
+        margin-top: 18px;
+        margin-left: 5px;
+        &:hover {
+          text-decoration: underline;
+          color: $success-green;
+        }
+        & i {
+          margin-right: 5px;
         }
       }
+    }
 }

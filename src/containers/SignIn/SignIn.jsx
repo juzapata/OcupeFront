@@ -28,26 +28,28 @@ const SignIn = () => {
         src="/banner-login.svg"
         alt="Banner Login"
       />
-      <Input
-        label="E-mail"
-        placeholder="seuemail@exemplo.com"
-        type="email"
-      />
-      <Input
-        label="Senha"
-        placeholder="mínimo 6 caracteres"
-        type="password"
-      />
-      <Button 
-        type="submit"
-        classNameBtn="btn__primary btn__primary--bigger"
-        text="Entrar"
-      />
-      <Cta
-        classNameCta="cta__primary"
-        href="https://www.google.com/"
-        text="Cadastre-se"
-      />
+      <form>
+        <Input
+          label="E-mail"
+          placeholder="seuemail@exemplo.com"
+          type="email"
+        />
+        <Input
+          label="Senha"
+          placeholder="mínimo 6 caracteres"
+          type="password"
+        />
+        <Button 
+          type="submit"
+          classNameBtn="btn__primary btn__primary--bigger"
+          text="Entrar"
+        />
+        <Cta
+          classNameCta="cta__primary"
+          href="https://www.google.com/"
+          text="Cadastre-se"
+        />
+      </form>
     </>
   )
 }
