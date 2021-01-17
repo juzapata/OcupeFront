@@ -5,7 +5,8 @@ const Button = (props) => {
             id={props.id} 
             type={props.type} 
             className={`btn ${props.classNameBtn}`} 
-            onClick={props.onClick}>
+            onClick={props.onClick}
+            disabled={props.disabled}>
             <i className={props.icon}></i>
             {props.text}           
         </button>

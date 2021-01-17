@@ -5,14 +5,14 @@ const CtaList = () => {
   return (
     <nav className="cta__list">
       <Cta
-        href="/teste"
+        href="/teste-vocacional"
         classNameCta="cta__list-item cta__list-item--success-green"
         icon="fas fa-edit" 
         text="Teste"
         text2="vocacional"
       />   
       <Cta
-        href="/psico"
+        href="/fale-com-psicologo"
         classNameCta="cta__list-item cta__list-item--success-green"
         icon="fas fa-brain"
         text="Fale com um"
