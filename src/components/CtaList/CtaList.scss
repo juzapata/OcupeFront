@@ -1,29 +1,9 @@
-// .cta-list {
-//   width: 100%;
-//   height: 60px;
-//   display: flex;
-//   justify-content: space-around;
-//   align-items: center;
 
-//   @include font (12px, 300, 12px);
-//   color: $white;
-//   &__align {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     align-items: center;
-//     @media (min-width: 1024px){
-//       @include font (14px, 300, 14px);
-//       flex-direction: row;
-//       justify-content: space-between;
-//     }
-//   }
-// }
-
-.cta-ul {
+.cta-list {
   display: flex;
   justify-content: space-around;
-  &__list {
-    
-  }
+
+  // & a {
+  //     border-left: 4px solid $blue;
+  // }
 }

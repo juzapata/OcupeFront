@@ -4,34 +4,34 @@ import Cta from '../base/Cta';
 
 const CtaList = ({props, onClick}) => {
   return (
-      <div>
+      <div className="cta-list">
           <Cta
             href="/home"
-            classNameCta="cta__icon"
+            classNameCta="cta__icon cta__icon--footer i"
             icon="fas fa-pen-square" 
-            text="Teste Vocacional"
+            text="Teste"
           />   
           <Cta
             href="/home"
-            classNameCta="cta__icon"
+            classNameCta="cta__icon cta__icon--footer i"
             icon="fas fa-brain"
-            text="Fale com um(a) psicólogo(a)"
+            text="psicólogo(a)"
           />
           <Cta
             href="/home"
-            classNameCta="cta__icon"
+            classNameCta="cta__icon cta__icon--footer i"
             icon="fas fa-chalkboard-teacher"
-            text="Ache um Mentor"
+            text="Mentor"
           />
           <Cta
             href="/home"
-            classNameCta="cta__icon"
+            classNameCta="cta__icon cta__icon--footer i"
             icon="fas fa-hands-helping" 
-            text="Sua Mentoria"
+            text="Mentoria"
           />
           <Cta
             href="/home"
-            classNameCta="cta__icon"
+            classNameCta="cta__icon cta__icon--footer i"
             text="Vagas"
             icon="fas fa-briefcase"
           />
