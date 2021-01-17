@@ -22,7 +22,7 @@ const MentorInfo = () => {
   fetchData();
   
   let pathname = location.pathname;
-  let mentorCode = pathname.split("/")[2]
+  let mentorCode = pathname.split("/")[2];
   const filter = mentores.filter((mentor) => mentor.contact.email.includes(mentorCode));
   setMentorSelected(filter);
 }, [location.pathname, mentores]);
