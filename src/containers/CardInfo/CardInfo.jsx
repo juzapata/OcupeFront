@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from '../../components/base/Image';
 import Button from '../../components/base/Button';
 import CardContact from '../../components/CardContact';
 
 const CardInfo = (props) => {
+  const [showCardContact, setShowCardContact] = React.useState(false);
+  const onClick = () => setShowCardContact(true);
+
   return (
     <div className="card">
       <div className="card__header">
@@ -23,9 +26,10 @@ const CardInfo = (props) => {
         type="submit"
         classNameBtn="btn__secondary btn__secondary i"
         text="Adicionar mentor"
-        icon="fas fa-user-plus"  
+        icon="fas fa-user-plus"
+        onClick={onClick}
       />
-      <CardContact />
+      {showCardContact ? <CardContact /> : false}      
     </div>
     ) 
   }
