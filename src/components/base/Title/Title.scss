@@ -1,0 +1,4 @@
+.title {
+  @include font (14px, 300, 12px);
+  color: $blue;
+}

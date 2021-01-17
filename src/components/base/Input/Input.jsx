@@ -16,8 +16,7 @@ const Input = (props) => {
                 placeholder={props.placeholder} />
                 <i className={props.icon}></i>
             </label>
-        </div>
-        
+        </div>    
     )
 }
 
