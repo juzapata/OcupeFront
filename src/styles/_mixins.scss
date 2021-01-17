@@ -1,4 +1,5 @@
 @mixin btn ($font-family, $font-weight) {
+    height: 40px;
     font-family: #{$font-family}, sans-serif;
     font-weight: $font-weight;
     border: none;
@@ -7,9 +8,8 @@
     transition: 0.3s ease-in-out;
   }
   
-@mixin btn-type ($width, $padding, $color) {
+@mixin btn-type ($width, $color) {
   width: $width;
-  padding: $padding;
   color: $color;
   border-radius: 8px;
 }
