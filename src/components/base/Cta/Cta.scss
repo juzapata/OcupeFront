@@ -1,106 +1,24 @@
 .cta {
     &__primary {
-      @include cta-type(100%, 10px, $blue);
+      @include cta-type(100%, 0, $blue);
+      @include font (14px, 700, auto);
       text-align: center;
-      font-weight: bold;
-      margin-top: 8px;
       &:hover {
         color: $hover-blue;
         text-decoration: underline;
       }
     }
     &__secondary {
-      @include cta-type(100%, 10px, $white);
-      height: 40px;
-      margin: 13px 0 0px;
-      font-size: 14px;
-      text-align: start;
-      @media (min-width: 1280px){
-          width: 60%;
-          margin: 20px 0 0px;
-          font-size: 18px;
-      }
-      &:hover {
-          background-color: $hover-blue;
-          border: 1px solid $hover-blue;
-      }
-      & i {
-          margin-right: 13px;
-          font-size: 20px;
-          vertical-align: sub;
-      }
-      &--success-green {
-          background-color: darken($color: $success-green, $amount: 10);
-          @media (min-width: 1024px){
-          line-height: 22px;
-          }
-          &:hover {
-          background-color: $success-green;
-          }
-      }
-      &--block-gray {
-          background-color: darken($color: $background-block-gray, $amount: 10);
-          @media (min-width: 1024px){
-          line-height: 22px;
-          }
-          &:hover {
-          background-color: $background-block-gray;
-          }
+      @include cta-type(100%, 0, $success-green);
+      @include font (14px, 400, auto);
+
+      &--back {
+        margin-top: 36px;
+        color: $text-block-gray;
       }
     }
     &__icon {
-    font-size: 12px;
-    color: $blue;
-        @media (min-width: 1024px){
-            font-size: 28px;
-        }
-        &:hover {
-            color: lighten($color: $hover-blue, $amount: 0)
-        }
-        &--profile {
-            display: flex;
-            padding-top: 5px;
-            color: $orange;
-            &:hover {
-              color: lighten($color: $orange, $amount: 25)
-            }
-            & i {
-              font-size: 24px;
-            }
-        }
-        &--footer {
-          display: flex;
-          flex-direction: column;
-          align-content: center;
-          justify-content: center;
-          text-align: center;
-          text-decoration: none;
-          width: min-content;
-          align-self: self-start;
-          // border-left: 1px solid $blue;
-
-          // &:first-child {
-          //   border: none;
-          // }
-
-          & i {
-            font-size: 24px;
-            padding: 10px 0 8px 0;
-          }          
-        }
-      &--card-contact {
-        @include font (18px, 500, 20px);
-        color: $success-green;
-        text-decoration: none;
-        margin-top: 18px;
-        margin-left: 5px;
-        &:hover {
-          text-decoration: underline;
-          color: $success-green;
-        }
-        & i {
-          margin-right: 5px;
-        }
-      }
+      margin-right: 12px;
+      font-size: 18px;
     }
 }

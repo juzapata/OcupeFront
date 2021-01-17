@@ -1,38 +1,48 @@
 .input {
-    &__label {
-        color: $blue;
-        font-weight: 100;
-        font-size: 18px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 15px;
+  &__label {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: $blue;
+    font-size: 14px;
+    position: relative;
+    
+    & i.fas {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+    }
+    
+    & span {
+      margin-top: 15px;
+      &:empty {
+        margin: 0;
+      }
+      & + input {
+        &:empty {
+          margin: 0;
+        }
+      }
     }
 
-    &__itself {
-        position: relative;
-        border: 1px solid $blue;
-        border-radius: 8px;
-        color: $blue;
-        font-weight: 400;
-        background-color: $white;
-        padding: 15px 20px;
-        
-        @media (min-width: 1024px){
-            width: 239px;
-            height: 40px;
-            padding: 5px;
-        }
-        
-        ::placeholder{
-            color: $text-block-gray;
-            font-weight: 100;
-        }
-    } 
-
-    &__icon {
-        position: absolute;
-        align-self: flex-end;
-        margin-top: 35px;
-        margin-right: 12px;
+  }
+  
+  &__itself {
+    margin-top:4px;
+    padding: 0 20px 0 10px;
+    height: 40px;
+    border: 1px solid $blue;
+    border-radius: 8px;
+    color: $graffiti-text;
+    font-weight: 400;
+    background-color: transparent;
+    box-sizing: border-box;
+    
+    ::placeholder{
+      color: $text-block-gray;
+      font-weight: 100;
     }
+  } 
+  
 }

@@ -1,0 +1,7 @@
+.mentor {
+  &__list {
+    margin-top: 16px;
+    height: calc(100vh - 60px - 125px);
+    overflow-y: scroll;
+  }
+}

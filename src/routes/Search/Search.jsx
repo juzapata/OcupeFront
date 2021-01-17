@@ -1,10 +1,16 @@
 import React from 'react';
 
+import Navbar from '../../containers/Navbar';
 import SearchList from '../../containers/SearchList';
 
 const Search = () => {
   return (
-    <SearchList />
+    <>
+    <Navbar/>
+    <div className="container">
+      <SearchList />
+    </div>
+    </>
   )
 }
 

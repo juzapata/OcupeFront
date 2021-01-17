@@ -1,19 +1,21 @@
-.card-body {
-  .card-header{
+.card {
+  &__header{
     display: flex;
     align-items: center;
-    margin-top: 30px;
-
-    .card-header-title {
-      width: 70%;
-    }
-    image {
-      width: 30%;
+    padding-top: 28px;
+    
+    &-title h2 {
+      margin: 4px 0 0 26px;
+      @include font (16px, 400, 12px);
+      color: $graffiti-text;
+      & span {
+        font-weight: 700;
+      }
     }
   }
-  .card-text {
-    @include font (16px, 500, 20px);
-    margin: 20px 0;
+  &__text {
+    @include font (14px, 400, 20px);
+    margin: 16px 0 30px;
     font-style: italic;
     color: $graffiti-text;
   }
