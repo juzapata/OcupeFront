@@ -1,26 +1,38 @@
 import React from 'react';
 import Cta from '../Cta';
 
-
 const CardContact = (props) => {
   return (
-    <div>
-      <Cta 
-        href="https://www.google.com.br/" 
-        classNameCta="cta__icon cta__icon--card-contact"
-        icon="fab fa-whatsapp" 
-        text="11 99999-9999"/>
-      <Cta 
-        href="https://www.google.com.br/" 
-        classNameCta="cta__icon cta__icon--card-contact"
-        icon="fas fa-envelope" 
-        text="emaildomentor@gmail.com"/>
-      <Cta 
-        href="https://www.google.com.br/" 
-        classNameCta="cta__icon cta__icon--card-contact"
-        icon="fas fa-calendar" 
-        text="agende seu horário de mentoria"/>
-    </div>
+    <>
+    <ul className="contact__list">
+      <li className="contact__list-item">
+        <Cta 
+          href="https://www.google.com.br/" 
+          classNameCta="cta__secondary"
+          icon="cta__icon fab fa-whatsapp" 
+          text="11 99999-9999"/>
+      </li>
+      <li className="contact__list-item">
+        <Cta 
+          href="https://www.google.com.br/" 
+          classNameCta="cta__secondary"
+          icon="cta__icon fas fa-envelope" 
+          text="emaildomentor@gmail.com"/>
+      </li>
+      <li className="contact__list-item">
+        <Cta 
+          href="https://www.google.com.br/" 
+          classNameCta="cta__secondary"
+          icon="cta__icon fas fa-calendar" 
+          text="agende seu horário de mentoria"/>
+      </li>
+    </ul>
+    <Cta 
+    href="https://www.google.com.br/" 
+    classNameCta="cta__secondary cta__secondary--back"
+    icon="cta__icon fas fa-chevron-left" 
+    text="Voltar"/>
+    </>
   ) 
 }
 
