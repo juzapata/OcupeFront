@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
+import Title from '../../components/base/Title';
 import Input from '../../components/base/Input';
 import ListItem from '../../components/base/ListItem';
-import NavBar from '../../containers/Navbar';
 
 const SearchList = () => {
   const [inputValue, setInputValue] = useState('');
@@ -35,10 +35,12 @@ const SearchList = () => {
 
   return (
     <>
-    <NavBar />
+    <Title 
+        text="Sua Trilha"
+        classNameTitle="title"
+      />
     <Input
-      label="Busca"
-      placeholder="Pesquise por nome, profissão ou localização"
+      placeholder="Nome, profissão ou localização"
       type="search"
       icon="fas fa-search"
       onChange={(e) => handleListSearch(e)}
