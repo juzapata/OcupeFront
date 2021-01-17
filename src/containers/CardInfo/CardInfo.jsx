@@ -22,7 +22,7 @@ const CardInfo = ({mentor}) => {
       <div className="card__header">
         <Image
           classNameImage="image__photo-mentor"
-          src="./mentor-photo.jpg"
+          src={mentorDetail.image}
           alt={`Foto de ${mentorDetail.name}`}/>
         <div className="card__header-title">
           <h2>{mentorDetail.name}</h2>

@@ -10,7 +10,7 @@ const Navbar = () => {
         <Link to="/home">
         <Image
           classNameImage="image__navbar-logo"
-          src="./logo-nome.png"
+          src="/logo-nome.png"
           alt="Logo Ocupe"
         />
         </Link>
