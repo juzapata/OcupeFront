@@ -1,0 +1,30 @@
+@import '../../../styles/variables';
+
+.mentor {
+  &__list {
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $blue;;
+    }
+    &-align {
+      display: flex;
+      align-items: center;
+    }
+    &-data {
+      margin: 12px 0 0 12px;
+      padding: 0 0 12px;
+      color: $graffiti-text;
+      font-size: 14px;
+      & span {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__icon {
+    color: $blue;
+    font-size: 24px;
+  }
+}
