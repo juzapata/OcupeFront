@@ -4,4 +4,25 @@
     height: calc(100vh - 60px - 125px);
     overflow-y: scroll;
   }
+
+  &__search-toggle {
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  & i{
+    // color: $text-block-gray;
+    font-size: 18px;
+    padding: 10px;
+  }
+  &--orange {
+    color: $orange;
+  }
+  &--gray {
+    color: $text-block-gray;
+  }
+
 }
