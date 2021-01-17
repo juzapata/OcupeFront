@@ -39,7 +39,7 @@ img {
 .container {
   margin: 0 auto;
   width: 80%;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 140px);
   @media (min-width: 768px){
     width: 600px;
   }
@@ -49,5 +49,9 @@ img {
 
   &__login {
     height: 100vh;
+  }
+
+  &__home {
+    height: calc(100vh - 60px);
   }
 }

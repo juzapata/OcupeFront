@@ -33,8 +33,8 @@ const MentorInfo = () => {
       <NavBar />
       <div className="container">
         <CardInfo mentor={mentorSelected}/>
-        <Footer />
       </div>
+      <Footer />
     </>
   )
 }
