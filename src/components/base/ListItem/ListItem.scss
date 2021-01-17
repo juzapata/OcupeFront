@@ -1,15 +1,32 @@
 .mentor {
   &__list {
     &-item {
+      padding: 0 15px;
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid $blue;
       cursor: pointer;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        background-color: darken($color: $background-gray, $amount: 5);
+      }
+      & .fa-eye {
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $hover-blue;
+        }
+      }
     }
     &-align {
       display: flex;
       align-items: center;
+      & .fa-user-plus {
+        transition: 0.3s ease-in-out;
+        &:hover {
+          color: $success-green;
+        }
+      }
     }
     &-data {
       margin: 12px 0 0 12px;

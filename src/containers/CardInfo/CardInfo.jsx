@@ -6,7 +6,7 @@ import CardContact from '../../components/CardContact';
 
 const CardInfo = ({mentor}) => {
   const [mentorDetail, setMentorDetail] = useState({});
-  const [showCardContact, setShowCardContact] = React.useState(false);
+  const [showCardContact, setShowCardContact] = useState(false);
   const onClick = () => setShowCardContact(true);
 
   useEffect(() => {
@@ -32,14 +32,26 @@ const CardInfo = ({mentor}) => {
       <p className="card__text">
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quas sit, odio dolores exercitationem quo? Blanditiis, deserunt doloremque in quod at fuga quas totam doloribus adipisci Rerum, eius voluptate voluptatibus officiis id necessitatibus, consequuntur quibusdam et ipsm assumenda eveniet voluptatem vitae. Veritatis!"     
       </p>
-      <Button 
-        type="submit"
-        classNameBtn="btn__secondary btn__secondary i"
-        text="Adicionar mentor"
-        icon="fas fa-user-plus"
-        onClick={onClick}
-      />
-      {showCardContact ? <CardContact /> : false}  
+      {
+        showCardContact 
+        ? <>
+        <Button 
+          type="submit"
+          classNameBtn="btn__secondary btn__secondary--success-green"
+          text="Mentor adicionado"
+          icon="fas fa-check"
+          disabled={true}
+        />
+        <CardContact />
+        </>
+        : <Button 
+            type="submit"
+            classNameBtn="btn__secondary"
+            text="Adicionar mentor"
+            icon="fas fa-user-plus"
+            onClick={onClick}
+          />
+        }  
       <Cta 
         href="/busca-mentor" 
         classNameCta="cta__secondary cta__secondary--back"

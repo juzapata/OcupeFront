@@ -31,16 +31,26 @@
       &:hover {
         background-color: lighten($color: $success-green, $amount: 15);
       }
+      & [disabled] {
+        &:hover {
+          background-color: $success-green;
+        }
+      }
     }
     &--block-gray {
       background-color: $background-block-gray;
       color: $text-block-gray;
-    }
-    &[disabled] {
+
       &:hover {
-        background-color: $background-block-gray;
-        color: $text-block-gray;
+        background-color: lighten($color: $background-block-gray, $amount: 7);
       }
+      
+      & [disabled] {
+        &:hover {
+          background-color: $background-block-gray;
+          color: $text-block-gray;
+        }
+    }
     }
   }
 }

@@ -4,24 +4,34 @@ import Button from '../../components/base/Button';
 import Input from '../../components/base/Input';
 import Image from '../../components/base/Image';
 import Cta from '../../components/base/Cta';
-import { Link } from 'react-router-dom';
-
-const initialValues = {
-  email: "",
-  senha: "",
-}
 
 const SignIn = () => {
-  const [values, setValues] = useState(initialValues);
+  const [inputEmailValue, setInputEmailValue] = useState('');
+  const [inputPasswordValue, setInputPasswordValue] = useState('');
+  const [mentorados, setMentorados] = useState([]);
+  let history = useHistory();
 
-  const handleLogin = (e) => { 
-    const { name, value } = e.target;
-    
-    setValues({
-      ...values,
-      [name]: value,
-    });
-    console.log(values)
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        await fetch('https://ocupe-back-end.herokuapp.com/ocupe/get-mentored')
+          .then((res) => res.json())
+          .then(data => setMentorados(data.mentorados));
+      } catch (e) {
+          console.error(e);
+      }
+  };
+  fetchData();
+}, []);
+
+  const clickLogin = (e) => {
+    e.preventDefault();
+      if((inputEmailValue === mentorados[0].contact.email && Number(inputPasswordValue) === mentorados[0].password) ||
+          (inputEmailValue === mentorados[1].contact.email && Number(inputPasswordValue) === mentorados[1].password)) {
+        history.push('/home');
+      } else {
+        alert('Dados incorretos!');
+      }
   }
   
   return (    
@@ -36,22 +46,20 @@ const SignIn = () => {
           label="E-mail"
           placeholder="seuemail@exemplo.com"
           type="email"
-          value={values.email}
           name="email"
-          onChange= {handleLogin}/>
+          onChange= {(e) => setInputEmailValue(e.target.value)}/>
         <Input
           label="Senha"
           placeholder="mínimo 6 caracteres"
           type="password"
-          value={values.senha}
           name="senha"
-          onChange= {handleLogin}/>
-        <Link to="/home">
+          onChange= {(e) => setInputPasswordValue(e.target.value)}/>
           <Button 
           type="submit"
           classNameBtn="btn__primary"
-          text="Entrar"/>
-        </Link>
+          text="Entrar"
+          onClick={(e) => clickLogin(e)}
+        />
         <Cta
         classNameCta="cta__primary"
         text="Cadastre-se"

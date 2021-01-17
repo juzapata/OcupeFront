@@ -1,6 +1,5 @@
 import Track from '../../containers/Track';
 import NavBar from '../../containers/Navbar';
-import Footer from '../../containers/Footer';
 
 const Home = () => {
   return (

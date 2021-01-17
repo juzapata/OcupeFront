@@ -1,36 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useHistory } from "react-router-dom";
 import Button from '../../components/base/Button';
 import Input from '../../components/base/Input';
 import Image from '../../components/base/Image';
 import Cta from '../../components/base/Cta';
-import { Link } from 'react-router-dom';
-
-const initialValues = {
-  nome: "",
-  endereco: "",
-  email: "",
-  senha: "",
-}
 
 const RegisterIn = () => {
-  const [values, setValues] = useState(initialValues);
+  const [inputNameValue, setInputNameValue] = useState('');
+  // const [inputAddressValue, setInputAddressValue] = useState('');
+  const [inputEmailValue, setInputEmailValue] = useState('');
+  const [inputPasswordValue, setInputPasswordValue] = useState('');
+  let history = useHistory();
 
-  const handleInputChange = (e) => { 
-    const { name, value } = e.target;
-    
-    setValues({
-      ...values,
-      [name]: value,
-    });
-    console.log(values)
+  const clickRegister = (e) => {
+    e.preventDefault();
+      if(inputNameValue && inputEmailValue && inputPasswordValue) {
+        history.push('/home');
+      } else {
+        alert('Preencha todos os campos!');
+      }
   }
 
   return (    
     <div className="sign__group">
       <Image
         classNameImage="image__banner"
-        src="/banner-login.svg"
+        src="/logo.png"
         alt="Banner Login"
       />
       <form className="sign__form">
@@ -38,36 +33,28 @@ const RegisterIn = () => {
           label="Nome"
           placeholder="nome"
           type="text"
-          value={values.nome}
-          name="nome"
-          onChange= {handleInputChange}/>
-        <Input
+          onChange= {(e) => setInputNameValue(e.target.value)}/>
+        {/* <Input
           label="Endereço"
           placeholder="endereço"
           type="text"
-          value={values.endereco}
-          name="endereco"
-          onChange= {handleInputChange}/>
+          onChange= {(e) => setInputAddressValue(e.target.value)}/> */}
         <Input
           label="E-mail"
           placeholder="seuemail@exemplo.com"
           type="email"
-          value={values.email}
-          name="email"
-          onChange= {handleInputChange}/>
+          onChange= {(e) => setInputEmailValue(e.target.value)}/>
         <Input
           label="Senha"
           placeholder="mínimo 6 caracteres"
           type="password"
-          value={values.senha}
-          name="senha"
-          onChange= {handleInputChange}/>
-        <Link to="/home">
-          <Button 
+          onChange= {(e) => setInputPasswordValue(e.target.value)}/>
+        <Button 
           type="submit"
           classNameBtn="btn__primary"
           text="Cadastar"
-        /></Link>
+          onClick={(e) => clickRegister(e)}
+        />
         <Cta
           classNameCta="cta__primary"
           text="Voltar ao Login"
