@@ -1,9 +1,7 @@
 # Ocupe
 Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
 
-### Link da Aplicação:
-
-## [Ocupe](https://ocupe-frontend.herokuapp.com/)
+### Link da Aplicação: [Ocupe](https://ocupe-frontend.herokuapp.com/)
 
 ## Índice
 
