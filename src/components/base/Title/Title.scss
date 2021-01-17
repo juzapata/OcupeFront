@@ -1,0 +1,6 @@
+.title {
+  @include font (14px, 300, auto);
+  color: $blue;
+  padding-top: 28px;
+  margin-bottom: 4px;
+}

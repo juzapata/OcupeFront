@@ -1,0 +1,24 @@
+.card {
+  &__header{
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+    
+    &-title h2 {
+      margin: 4px 0 0 26px;
+      @include font (16px, 400, 12px);
+      color: $graffiti-text;
+      & span {
+        font-weight: 700;
+      }
+    }
+  }
+  &__text {
+    @include font (14px, 400, 20px);
+    margin: 16px 0 20px;
+    font-style: italic;
+    color: $graffiti-text;
+    overflow-x: scroll;
+    height: 112px;
+  }
+}

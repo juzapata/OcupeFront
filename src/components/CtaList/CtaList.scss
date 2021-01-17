@@ -1,0 +1,37 @@
+.cta {
+  &__list {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $white;
+    
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      justify-content: flex-start;
+      text-align: center;
+      color: $blue;
+      font-size: 12px;
+      & i {
+        font-size: 20px;
+        margin-bottom: 8px;
+      }
+      &:hover {
+        color: lighten($color: $hover-blue, $amount: 0);
+      }
+      
+      &--success-green {
+        color: $success-green;
+        &:hover {
+          color: lighten($color: $success-green, $amount: 15);
+        }
+      }
+      &--block-gray {
+        color: $text-block-gray;
+      }
+    }
+  }
+}
