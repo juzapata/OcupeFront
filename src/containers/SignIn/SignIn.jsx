@@ -28,7 +28,7 @@ const SignIn = () => {
     <div className="sign__group">
       <Image
         classNameImage="image__banner"
-        src="/banner-login.svg"
+        src="./logo.png"
         alt="Banner Login"
       />
       <form className="sign__form">
