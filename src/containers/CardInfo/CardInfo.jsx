@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from '../../components/base/Image';
 import Button from '../../components/base/Button';
 import CardContact from '../../components/CardContact';
 
 const CardInfo = ({mentor}) => {
   const [mentorDetail, setMentorDetail] = useState({});
+  const [showCardContact, setShowCardContact] = React.useState(false);
+  const onClick = () => setShowCardContact(true);
 
   useEffect(() => {
     let mentorData = mentor[0];
@@ -33,9 +35,10 @@ const CardInfo = ({mentor}) => {
         type="submit"
         classNameBtn="btn__secondary btn__secondary i"
         text="Adicionar mentor"
-        icon="fas fa-user-plus"  
+        icon="fas fa-user-plus"
+        onClick={onClick}
       />
-      <CardContact />
+      {showCardContact ? <CardContact /> : false}      
     </div>
     : false
     }
