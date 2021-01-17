@@ -20,5 +20,34 @@
     &__icon {
       margin-right: 12px;
       font-size: 18px;
+      &--footer {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+        width: min-content;
+        align-self: self-start;
+        color: $blue;
+        & i {
+          font-size: 24px;
+          padding: 10px 0 8px 0;
+        }          
+      }
+      &--card-contact {
+        @include font (18px, 500, 20px);
+        color: $success-green;
+        text-decoration: none;
+        margin-top: 18px;
+        margin-left: 5px;
+        &:hover {
+          text-decoration: underline;
+          color: $success-green;
+        }
+        & i {
+          margin-right: 5px;
+        }
+      }
     }
 }
