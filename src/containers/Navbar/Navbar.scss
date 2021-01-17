@@ -1,26 +1,30 @@
 .navbar {
-    height: 60px;
-    background-color: $orange;
+  height: 60px;
+  background-color: $orange;
+  display: flex;
+  justify-content: center;
+  
+  &__container {
+    width: 90%;
     display: flex;
-    justify-content: center;
-
-    &__container {
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (min-width: 769px){
-            width: 600px;
-        }
-
-        @media (min-width: 1024px){
-            width: 1000px;
-        }
+    justify-content: space-between;
+    align-items: center;
+    
+    @media (min-width: 769px){
+      width: 600px;
     }
-
-    i{
-        color: white;
-        font-size: 24px;
+    
+    @media (min-width: 1024px){
+      width: 1000px;
     }
+  }
+  
+  &__icons {
+    display: flex;
+  }
+  i{
+    color: white;
+    font-size: 24px;
+    margin-right: 16px;
+  }
 }

@@ -19,6 +19,9 @@
         font-size: 20px;
         margin-bottom: 8px;
       }
+      &:hover {
+        color: lighten($color: $hover-blue, $amount: 0);
+      }
       
       &--success-green {
         color: $success-green;
