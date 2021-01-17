@@ -5,7 +5,7 @@ const Input = (props) => {
     <label
       className="input__label"
       htmlFor={props.id}>
-      {props.label}
+      <span>{props.label}</span>
       <input
           className="input__itself"
           type={props.type}
@@ -15,7 +15,7 @@ const Input = (props) => {
           placeholder={props.placeholder} 
           onChange={props.onChange}
       />
-      <i className={`input__icon ${props.icon}`}></i>
+      <i className={props.icon}></i>
     </label> 
   )
 }
