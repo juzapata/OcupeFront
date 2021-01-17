@@ -1,8 +1,7 @@
 import React from 'react';
 import Image from '../../components/base/Image';
-import Title from '../../components/base/Title';
 import Button from '../../components/base/Button';
-import CardContact from '../../components/base/CardContact';
+import CardContact from '../../components/CardContact';
 
 const CardInfo = (props) => {
   return (
