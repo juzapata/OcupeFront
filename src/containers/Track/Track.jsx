@@ -1,24 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useHistory } from "react-router-dom";
+
 import Button from '../../components/base/Button';
 import Image from '../../components/base/Image';
 import Title from '../../components/base/Title';
 
 const Track = () => {
-  // const [productDetail, setProductDetail] = useState({});
-  // const [chosenSize, setChosenSize] = useState('');
-  // let history = useHistory();
-  // const dispatch = useDispatch();
+  let history = useHistory();
 
-
-  // const handleProductSize = (e) => {
-  //   setChosenSize(e.target.value)
-  // }
-
-  // useEffect(() => {
-  //   let productDetail = productSelected[0];
-  //   setProductDetail(productDetail)
-  // }, [productSelected])
+  const handleClick = (e, url) => {
+    e.preventDefault();
+    history.push(url)
+  }
 
   return ( 
     <>   
@@ -32,37 +25,41 @@ const Track = () => {
           type="submit"
           classNameBtn="btn__secondary btn__secondary--success-green"
           text="Teste Vocacional"
-          icon="fas fa-edit"  
+          icon="fas fa-edit" 
+          onClick={(e) => handleClick(e,'/teste-vocacional')} 
         />
         <Button 
           type="submit"
           classNameBtn="btn__secondary btn__secondary--success-green"
           text="Fale com um(a) psicólogo(a)"
-          icon="fas fa-brain"  
+          icon="fas fa-brain"
+          onClick={(e) => handleClick(e, '/fale-com-psicologo')} 
         />
         <Button 
           type="submit"
           classNameBtn="btn__secondary"
           text="Ache um Mentor"
-          icon="fas fa-chalkboard-teacher"  
+          icon="fas fa-chalkboard-teacher"
+          onClick={(e) => handleClick(e, '/busca-mentor')} 
         />
         <Button 
           type="submit"
           classNameBtn="btn__secondary btn__secondary--block-gray"
           text="Sua Mentoria"
-          icon="fas fa-hands-helping"  
+          icon="fas fa-hands-helping" 
+          disabled={true}
         />
         <Button 
           type="submit"
           classNameBtn="btn__secondary btn__secondary--block-gray"
           text="Vagas"
           icon="fas fa-briefcase"  
+          disabled={true}
         />
       </div>
       <Image
         classNameImage="image__banner-home"
-        src="./banner.png"
-        alt="Banner Home"
+        src="/banner.png"
       />
     </div>
     </>

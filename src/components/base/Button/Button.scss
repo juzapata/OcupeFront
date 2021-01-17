@@ -36,5 +36,11 @@
       background-color: $background-block-gray;
       color: $text-block-gray;
     }
+    &[disabled] {
+      &:hover {
+        background-color: $background-block-gray;
+        color: $text-block-gray;
+      }
+    }
   }
 }

@@ -53,7 +53,7 @@ const SearchList = () => {
     />
 
     <ul className="mentor__list">
-      {listSearch.map((mentor, index) => <ListItem mentor={mentor} key={index} onClick={() => handleMentorCode(mentor.contact.email)} />)} 
+      {listSearch.map(mentor => <ListItem mentor={mentor} key={mentor.id} onClick={() => handleMentorCode(mentor.contact.email)} />)} 
     </ul>
     </>
   )
