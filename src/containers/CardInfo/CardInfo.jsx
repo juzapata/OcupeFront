@@ -31,7 +31,7 @@ const CardInfo = (props) => {
       />
       {showCardContact ? <CardContact /> : false}      
     </div>
-    ) 
-  }
+  ) 
+}
 
 export default CardInfo;
