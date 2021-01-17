@@ -1,0 +1,73 @@
+.cta {
+    &__primary {
+      @include cta-type(100%, 10px, $blue);
+      text-align: center;
+      font-weight: bold;
+      margin-top: 8px;
+      &:hover {
+        color: $hover-blue;
+        text-decoration: underline;
+      }
+    }
+    &__secondary {
+      @include cta-type(100%, 10px, $white);
+      height: 40px;
+      margin: 13px 0 0px;
+      font-size: 14px;
+      background-color: darken($color: $blue, $amount: 15);
+      text-align: start;
+      @media (min-width: 1280px){
+          width: 60%;
+          margin: 20px 0 0px;
+          font-size: 18px;
+      }
+      &:hover {
+          background-color: $hover-blue;
+          border: 1px solid $hover-blue;
+      }
+      & i {
+          margin-right: 13px;
+          font-size: 22px;
+          vertical-align: sub;
+      }
+      &--success-green {
+          background-color: darken($color: $success-green, $amount: 10);
+          @media (min-width: 1024px){
+          line-height: 22px;
+          }
+          &:hover {
+          background-color: $success-green;
+          }
+      }
+      &--block-gray {
+          background-color: darken($color: $background-block-gray, $amount: 10);
+          @media (min-width: 1024px){
+          line-height: 22px;
+          }
+          &:hover {
+          background-color: $background-block-gray;
+          }
+      }
+    }
+    &__icon {
+    font-size: 24px;
+    color: $blue;
+        @media (min-width: 1024px){
+            font-size: 28px;
+        }
+        &:hover {
+            color: lighten($color: $hover-blue, $amount: 0)
+        }
+        &--profile {
+            display: flex;
+            padding-top: 5px;
+            color: $orange;
+            &:hover {
+              color: lighten($color: $orange, $amount: 25)
+            }
+            & i {
+              font-size: 24px;
+            }
+        }
+    }
+}
