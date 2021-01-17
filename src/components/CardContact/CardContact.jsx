@@ -1,5 +1,5 @@
 import React from 'react';
-import Cta from '../Cta';
+import Cta from '../base/Cta';
 
 const CardContact = (props) => {
   return (

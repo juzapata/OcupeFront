@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 import Title from '../../components/base/Title';
 import Input from '../../components/base/Input';
@@ -8,6 +9,7 @@ const SearchList = () => {
   const [inputValue, setInputValue] = useState('');
   const [mentores, setMentores] = useState([]);
   const [listSearch, setListSearch] = useState([]);
+  let history = useHistory();
 
   useEffect(() => {
     async function fetchData() {
@@ -33,6 +35,10 @@ const SearchList = () => {
     setInputValue(inputSearchValue)   
   }
 
+  const handleMentorCode = (mentorCode) => {
+    history.push('/mentor/' + mentorCode);
+  }
+
   return (
     <>
     <Title 
@@ -47,7 +53,7 @@ const SearchList = () => {
     />
 
     <ul className="mentor__list">
-      {listSearch.map((mentor, index) => <ListItem mentor={mentor} key={index} onClick={() => console.log(mentor.name)} />)} 
+      {listSearch.map((mentor, index) => <ListItem mentor={mentor} key={index} onClick={() => handleMentorCode(mentor.contact.email)} />)} 
     </ul>
     </>
   )
