@@ -1,14 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
+
 
 const Cta = (props) => {
-  return <a 
-          id={props.id} 
-          href={props.href} 
-          className={`${props.classNameCta}`} 
-          onClick={props.onClick}>
-          <i className={props.icon}></i>
-          {props.text}           
-        </a>
-}
-
-export default Cta;
+  return (
+    <Link to={props.href}
+      id={props.id} 
+      className={`${props.classNameCta}`} 
+      onClick={props.onClick}>
+      <i className={props.icon}></i>
+      <p>{props.text}</p>
+      <p>{props.text2}</p>
+    </Link>
+    )
+  }
+  
+  export default Cta;
