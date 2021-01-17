@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import Login from './Login';
+import MapSearch from './MapSearch';
 import MentorInfo from './MentorInfo';
 
 const Routes = () => (
@@ -17,6 +18,10 @@ const Routes = () => (
 
     <Route path="/mentor">
       <MentorInfo />
+    </Route>
+
+    <Route path="/map">
+      <MapSearch />
     </Route>
   </Switch>
 );
