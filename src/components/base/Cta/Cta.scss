@@ -88,5 +88,19 @@
             padding: 10px 0 8px 0;
           }          
         }
+      &--card-contact {
+        @include font (18px, 500, 20px);
+        color: $success-green;
+        text-decoration: none;
+        margin-top: 18px;
+        margin-left: 5px;
+        &:hover {
+          text-decoration: underline;
+          color: $success-green;
+        }
+        & i {
+          margin-right: 5px;
+        }
+      }
     }
 }

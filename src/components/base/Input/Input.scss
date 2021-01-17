@@ -1,38 +1,38 @@
-.input-div {
-    font-family: 'Roboto', sans-serif;
-    .input-label {
+.input {
+    &__label {
         color: $blue;
         font-weight: 100;
         font-size: 18px;
         display: flex;
         flex-direction: column;
         margin-top: 15px;
-    
-        .input-itself {
-            position: relative;
-            border: 1px solid $blue;
-            border-radius: 8px;
-            color: $blue;
-            font-weight: 400;
-            background-color: $white;
-            padding: 15px 20px;
-    
-            @media (min-width: 1024px){
-                width: 239px;
-                height: 40px;
-                padding: 5px;
-            }
-    
-            ::placeholder{
-                color: $text-block-gray;
-                font-weight: 100;
-            }
-        }        
-        i {
-            position: absolute;
-            align-self: flex-end;
-            margin-top: 35px;
-            margin-right: 12px;
+    }
+
+    &__itself {
+        position: relative;
+        border: 1px solid $blue;
+        border-radius: 8px;
+        color: $blue;
+        font-weight: 400;
+        background-color: $white;
+        padding: 15px 20px;
+        
+        @media (min-width: 1024px){
+            width: 239px;
+            height: 40px;
+            padding: 5px;
         }
-    }    
+        
+        ::placeholder{
+            color: $text-block-gray;
+            font-weight: 100;
+        }
+    } 
+
+    &__icon {
+        position: absolute;
+        align-self: flex-end;
+        margin-top: 35px;
+        margin-right: 12px;
+    }
 }
