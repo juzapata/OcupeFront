@@ -20,7 +20,7 @@ const Map = (props) => {
 
     return (
       <MapContainer center={props.mentoredAddress} zoom={13} scrollWheelZoom={false} style={{
-            height:"400px",
+            height:"366px",
             width: "100%"}}>
           <TileLayer
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
