@@ -19,7 +19,9 @@
     }
   }
   &__photo-mentor {
-    min-width: 100px;
-    margin-right: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }

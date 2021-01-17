@@ -3,15 +3,4 @@
   color: $blue;
   padding-top: 28px;
   margin-bottom: 4px;
-
-  &__mentor-name {
-    @include font (18px, 100, 12px);
-    color: $graffiti-text;
-    margin-top: 0px;
-  }
-  &__mentor-job {
-    @include font (18px, 500, 12px);
-    color: $graffiti-text;
-    margin-top: 10px;
-  }
 }
