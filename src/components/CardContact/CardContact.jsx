@@ -3,8 +3,8 @@ import Cta from '../base/Cta';
 
 const CardContact = (props) => {
   // exemplos:
-  const number = "11985413495";
-  const url = "sirleyas90@gmail.com";
+  const number = "11999999999";
+  const url = "joana@gmail.com";
   const title = "Agendamento Mentoria";
   const date = "20211124T010000Z/20211124T020000Z";
   const locationExample = "123%20Main%20St%2C%20Example%2C%20NY"
