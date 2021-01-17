@@ -2,7 +2,10 @@
 @import '../styles/mixins';
 
 @import '../containers/App/App.scss';
+@import '../containers/Navbar/Navbar.scss';
 
 @import '../components/base/Button/Button.scss';
 @import '../components/base/Image/Image.scss';
 @import '../components/base/Input/Input.scss';
+
+@import '../routes/Home/Home.scss';

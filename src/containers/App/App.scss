@@ -33,20 +33,20 @@ img {
   width: 100%;
 }
 
-#root {
-  min-height: 100vh;
-  margin-top: 60px;
-  position: relative;
-}
+// #root {
+//   min-height: 100vh;
+//   margin-top: 60px;
+//   position: relative;
+// }
 
-.container {
-  width: 90%;
-  margin: 0 auto;
-  @media (min-width: 1024px){
-    width: 1000px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;;
-  }
-}
+// .container {
+//   width: 90%;
+//   margin: 0 auto;
+//   @media (min-width: 1024px){
+//     width: 1000px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
