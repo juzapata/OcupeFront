@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Cta = (props) => {
+const CtaExternal = (props) => {
   return (
-    <Link to={props.href}
+    <a href={props.href}
       id={props.id} 
-      className={`${props.classNameCta}`} 
+      className={`${props.classNameCtaExternal}`} 
       onClick={props.onClick}>
       <i className={props.icon}></i>
       <p>{props.text}</p>
       <p>{props.text2}</p>
-    </Link>
+    </a>
     )
   }
   
-  export default Cta;
+  export default CtaExternal;
