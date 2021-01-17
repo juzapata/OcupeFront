@@ -1,0 +1,24 @@
+.cta {
+  &__primary {
+    @include cta-type(100%, 0, $blue);
+    @include font (14px, 700, auto);
+    text-align: center;
+    &:hover {
+      color: $hover-blue;
+      text-decoration: underline;
+    }
+  }
+  &__secondary {
+    @include cta-type(100%, 0, $success-green);
+    @include font (14px, 400, auto);
+    display: flex;
+    &--back {
+      margin-top: 24px;
+      color: $text-block-gray;
+    }
+  }
+  &__icon {
+    margin-right: 12px;
+    font-size: 18px;
+  }
+}

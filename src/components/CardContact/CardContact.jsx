@@ -1,9 +1,9 @@
 import React from 'react';
-import Cta from '../base/Cta';
+import CtaExternal from '../base/CtaExternal';
 
 const CardContact = (props) => {
   // exemplos:
-  const number = "11999999999";
+  const number = "+5511999999999";
   const url = "joana@gmail.com";
   const title = "Agendamento Mentoria";
   const date = "20211124T010000Z/20211124T020000Z";
@@ -16,23 +16,23 @@ const CardContact = (props) => {
   return (
     <ul className="contact__list">
       <li className="contact__list-item">
-        <Cta 
+        <CtaExternal 
           href={hrefWhatsapp}
-          classNameCta="cta__secondary"
+          classNameCtaExternal="cta__secondary"
           icon="cta__icon fab fa-whatsapp" 
           text="11 99999-9999"/>
       </li>
       <li className="contact__list-item">
-        <Cta 
+        <CtaExternal
           href={hrefEmail}
-          classNameCta="cta__secondary"
+          classNameCtaExternal="cta__secondary"
           icon="cta__icon fas fa-envelope" 
           text="emaildomentor@gmail.com"/>
       </li>
       <li className="contact__list-item">
-        <Cta 
+        <CtaExternal 
           href={hrefAgenda} 
-          classNameCta="cta__secondary"
+          classNameCtaExternal="cta__secondary"
           icon="cta__icon fas fa-calendar" 
           text="agende seu horário de mentoria"/>
       </li>

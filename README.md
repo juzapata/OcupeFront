@@ -39,6 +39,22 @@ Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
     npm start
   ````
 
+## Credenciais:
+
+  ### Utilize para logar uma das opções abaixo:
+
+  ```` 
+    email: laura@gmail.com
+    senha: 1234
+
+  ````
+  ou
+  ````
+    email: joana@gmail.com
+    senha: 5678
+
+  ````
+
 ### Principais Tecnologias
 
 * React
