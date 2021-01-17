@@ -20,61 +20,51 @@ const Track = () => {
   //   setProductDetail(productDetail)
   // }, [productSelected])
 
-  return (    
-    <>
+  return ( 
+    <>   
     <Title 
-      text="Sua Trilha"
-      classNameTitle="title"/>
-      {/* <Button 
-        type="submit"
-        classNameBtn="btn__primary btn__primary--bigger"
-        text="Entrar"
+        text="Sua Trilha"
+        classNameTitle="title"
       />
-      <Button 
-        type="submit"
-        classNameBtn=" btn__secondary btn__secondary"
-        text="Entrar"
-      /> */}
-      <Button 
-        type="submit"
-        classNameBtn="btn__secondary btn__secondary--success-green i"
-        text="Teste Vocacional"
-        icon="fas fa-pen-square"  
-      />
-      <Button 
-        type="submit"
-        classNameBtn="btn__secondary btn__secondary--success-green i"
-        text="Fale com um(a) psicólogo(a)"
-        icon="fas fa-brain"  
-      />
-      <Button 
-        type="submit"
-        classNameBtn="btn__secondary btn__secondary i"
-        text="Ache um Mentor"
-        icon="fas fa-chalkboard-teacher"  
-      />
-      <Button 
-        type="submit"
-        classNameBtn="btn__secondary btn__secondary--block-gray i"
-        text="Sua Mentoria"
-        icon="fas fa-hands-helping"  
-      />
-      <Button 
-        type="submit"
-        classNameBtn="btn__secondary btn__secondary--block-gray i"
-        text="Vagas"
-        icon="fas fa-briefcase"  
-      />
-      {/* <Button 
-        type="submit"
-        classNameBtn="btn__icon btn__icon--profile"
-        icon="fas fa-user-alt"
-      /> */}
+    <div className="track__group">
+      <div className="track__steps">
+        <Button 
+          type="submit"
+          classNameBtn="btn__secondary btn__secondary--success-green"
+          text="Teste Vocacional"
+          icon="fas fa-edit"  
+        />
+        <Button 
+          type="submit"
+          classNameBtn="btn__secondary btn__secondary--success-green"
+          text="Fale com um(a) psicólogo(a)"
+          icon="fas fa-brain"  
+        />
+        <Button 
+          type="submit"
+          classNameBtn="btn__secondary"
+          text="Ache um Mentor"
+          icon="fas fa-chalkboard-teacher"  
+        />
+        <Button 
+          type="submit"
+          classNameBtn="btn__secondary btn__secondary--block-gray"
+          text="Sua Mentoria"
+          icon="fas fa-hands-helping"  
+        />
+        <Button 
+          type="submit"
+          classNameBtn="btn__secondary btn__secondary--block-gray"
+          text="Vagas"
+          icon="fas fa-briefcase"  
+        />
+      </div>
       <Image
-        classNameImage="image__banner"
+        classNameImage="image__banner-home"
         src="/banner-home.svg"
         alt="Banner Home"
       />
+    </div>
     </>
   )
 }
