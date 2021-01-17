@@ -40,6 +40,10 @@
     &--block-gray {
       background-color: $background-block-gray;
       color: $text-block-gray;
+
+      &:hover {
+        background-color: lighten($color: $background-block-gray, $amount: 7);
+      }
       
       & [disabled] {
         &:hover {
