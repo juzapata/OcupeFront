@@ -20,21 +20,5 @@
   &__icon {
     margin-right: 12px;
     font-size: 18px;
-    &--footer {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      text-align: center;
-      text-decoration: none;
-      width: min-content;
-      align-self: self-start;
-      color: $blue;
-      font-size: 12px;
-      & i {
-        font-size: 24px;
-        padding: 10px 0 8px 0;
-      }          
-    }
   }
 }

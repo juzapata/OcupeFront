@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
     <NavBar />
-    <div className="container">
+    <div className="container container__home">
       <Track/>
     </div>
     </>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from '../../components/base/Image';
 import Button from '../../components/base/Button';
+import Cta from '../../components/base/Cta';
 import CardContact from '../../components/CardContact';
 
 const CardInfo = ({mentor}) => {
@@ -38,7 +39,12 @@ const CardInfo = ({mentor}) => {
         icon="fas fa-user-plus"
         onClick={onClick}
       />
-      {showCardContact ? <CardContact /> : false}      
+      {showCardContact ? <CardContact /> : false}  
+      <Cta 
+        href="/busca-mentor" 
+        classNameCta="cta__secondary cta__secondary--back"
+        icon="cta__icon fas fa-chevron-left" 
+        text="Voltar"/>    
     </div>
     : false
     }
