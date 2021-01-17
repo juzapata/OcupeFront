@@ -7,21 +7,21 @@
     transition: 0.3s ease-in-out;
   }
   
-  @mixin btn-type ($width, $padding, $color) {
-    width: $width;
-    padding: $padding;
-    color: $color;
-    border-radius: 8px;
-  }
+@mixin btn-type ($width, $padding, $color) {
+  width: $width;
+  padding: $padding;
+  color: $color;
+  border-radius: 8px;
+}
 
-  @mixin cta-type ($width, $padding, $color) {
-    width: $width;
-    padding: $padding;
-    color: $color;
-  }
-  
-  @mixin font ($font-size, $font-weight, $line-height) {
-    font-size: $font-size;
-    font-weight: $font-weight;
-    line-height: $line-height;
-  }
+@mixin cta-type ($width, $padding, $color) {
+  width: $width;
+  padding: $padding;
+  color: $color;
+}
+
+@mixin font ($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
