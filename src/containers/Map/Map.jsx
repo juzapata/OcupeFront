@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup} from 'react-leaflet';
 
 const Map = (props) => { 
 
@@ -26,7 +26,7 @@ const Map = (props) => {
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
-          <Marker position={props.mentoredAddress} style={{color: '#F9B29C'}} >
+          <Marker position={props.mentoredAddress} >
             <Popup>
               Sua localização
             </Popup>
@@ -35,7 +35,7 @@ const Map = (props) => {
               return(
                 <Marker position={Object.values(mentor.address)} key={i}>
                 <Popup>
-                Casa do ${mentor.name}
+                localização do(a) {mentor.name}
             </Popup>
           </Marker>)  
           })}
