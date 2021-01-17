@@ -1,0 +1,13 @@
+.navbar {
+    height: 70px;
+    background-color: $orange;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    i{
+        color: white;
+        font-size: 28px;
+    }
+}
