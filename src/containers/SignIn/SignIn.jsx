@@ -6,11 +6,22 @@ import Image from '../../components/base/Image';
 import Cta from '../../components/base/Cta';
 import { Link } from 'react-router-dom';
 
+const initialValues = {
+  email: "",
+  senha: "",
+}
 
 const SignIn = () => {
-  const handleLogin = (e) => {
-    // let inputSearchValue = e.target.value; 
-    // setInputValue(inputSearchValue)   
+  const [values, setValues] = useState(initialValues);
+
+  const handleLogin = (e) => { 
+    const { name, value } = e.target;
+    
+    setValues({
+      ...values,
+      [name]: value,
+    });
+    console.log(values)
   }
   
   return (    
@@ -25,25 +36,27 @@ const SignIn = () => {
           label="E-mail"
           placeholder="seuemail@exemplo.com"
           type="email"
-        />
+          value={values.email}
+          name="email"
+          onChange= {handleLogin}/>
         <Input
           label="Senha"
           placeholder="mínimo 6 caracteres"
           type="password"
-        />
+          value={values.senha}
+          name="senha"
+          onChange= {handleLogin}/>
         <Link to="/home">
           <Button 
           type="submit"
           classNameBtn="btn__primary"
           text="Entrar"/>
         </Link>
-
-        <Link  to="/register">
-          <Cta
-          classNameCta="cta__primary"
-          text="Cadastre-se"
-          />
-        </Link>
+        <Cta
+        classNameCta="cta__primary"
+        text="Cadastre-se"
+        href="/register"
+        />
         
       </form>
     </div>

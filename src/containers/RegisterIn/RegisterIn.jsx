@@ -4,7 +4,7 @@ import Button from '../../components/base/Button';
 import Input from '../../components/base/Input';
 import Image from '../../components/base/Image';
 import Cta from '../../components/base/Cta';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const initialValues = {
   nome: "",
@@ -62,12 +62,12 @@ const RegisterIn = () => {
           value={values.senha}
           name="senha"
           onChange= {handleInputChange}/>
-        <Button 
+        <Link to="/home">
+          <Button 
           type="submit"
           classNameBtn="btn__primary"
           text="Cadastar"
-          // onClick={(e) => registerUser(e)}
-        />
+        /></Link>
         <Cta
           classNameCta="cta__primary"
           text="Voltar ao Login"
