@@ -3,7 +3,7 @@ Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
 
 ### Link da Aplicação:
 
-## [Ocupe](em breve...)
+## [Ocupe](https://ocupe-frontend.herokuapp.com/)
 
 ## Índice
 
@@ -11,7 +11,6 @@ Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
 * [Principais Tecnologias](#principais-tecnologias)
 * [Organização/Planejamento](#organização/planejamento)
 * [Definição do produto](#definição-do-produto)
-* [Aplicação](#aplicação)
 * [Protótipo](#protótipo)
 * [Roadmap](#roadmap)
 
@@ -90,18 +89,11 @@ Divulgação: redes sociais, influenciar educacionais, boca a boca.
 4. Qualidade e avanço no desenvolvimento do protótipo conceitual;
 5. Viabilidade de execução real da solução desenvolvida.
 
-
-## Aplicação
-
-A aplicação da Ocupe, pode ser acessada no link abaixo:
-
-[Aplicação publicada](https://ocupe-frontend.herokuapp.com/)
-
 ## Protótipo
 
 O protótipo da Ocupe, pode ser visualizado no link abaixo:
 
-[Protótipo da aplicação](...breve)
+[Protótipo da aplicação](https://www.figma.com/proto/GqbMd9cYZbnYltOH5hgeYI/ocupe-mobile?node-id=2%3A3&scaling=scale-down)
 
 ### Roadmap
   * Contato com as Empresas (monetização);
