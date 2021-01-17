@@ -61,7 +61,7 @@ const Track = () => {
       </div>
       <Image
         classNameImage="image__banner-home"
-        src="/banner-home.svg"
+        src="./banner.png"
         alt="Banner Home"
       />
     </div>
