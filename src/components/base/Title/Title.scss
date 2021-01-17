@@ -1,7 +1,8 @@
 .title {
-  @include font (16px, 300, 12px);
+  @include font (14px, 300, auto);
   color: $blue;
-  margin-top: 30px;
+  padding-top: 28px;
+  margin-bottom: 4px;
 
   &__mentor-name {
     @include font (18px, 100, 12px);
