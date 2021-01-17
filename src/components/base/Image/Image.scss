@@ -29,4 +29,18 @@
     border-radius: 50%;
     overflow: hidden;
   }
+  &__done {
+    height: calc(100vh - 145px);
+    & img {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media (min-width: 1024px){
+        height: auto;
+        width: 30%;
+      }
+    }
+  }
 }
