@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import Login from './Login';
+import Search from './Search';
 import MentorInfo from './MentorInfo';
 import Register from './Register';
 
@@ -16,11 +17,15 @@ const Routes = () => (
       <Register />
     </Route>
 
-    <Route path="/Home">
+    <Route path="/home">
       <Home />
     </Route>
 
-    <Route path="/mentor">
+    <Route path="/busca-mentor">
+      <Search />
+    </Route>
+
+    <Route path="/mentor/:mentorCode">
       <MentorInfo />
     </Route>
   </Switch>
