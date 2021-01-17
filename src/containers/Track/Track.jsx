@@ -25,16 +25,6 @@ const Track = () => {
     <Title 
       text="Sua Trilha"
       classNameTitle="title"/>
-      {/* <Button 
-        type="submit"
-        classNameBtn="btn__primary btn__primary--bigger"
-        text="Entrar"
-      />
-      <Button 
-        type="submit"
-        classNameBtn=" btn__secondary btn__secondary"
-        text="Entrar"
-      /> */}
       <Button 
         type="submit"
         classNameBtn="btn__secondary btn__secondary--success-green i"
@@ -65,11 +55,6 @@ const Track = () => {
         text="Vagas"
         icon="fas fa-briefcase"  
       />
-      {/* <Button 
-        type="submit"
-        classNameBtn="btn__icon btn__icon--profile"
-        icon="fas fa-user-alt"
-      /> */}
       <Image
         classNameImage="image__banner"
         src="/banner-home.svg"

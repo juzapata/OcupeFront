@@ -3,14 +3,22 @@ import { Route, Switch } from 'react-router-dom';
 
 import Home from './Home';
 import Login from './Login';
+import MentorInfo from './MentorInfo';
 
 const Routes = () => (
-//   <Switch>
-    // <Route exact path="/">
-      // <Home />
+  <Switch>
+    <Route exact path="/">
       <Login />
-    // </Route>
-//   </Switch>
+    </Route>
+
+    <Route path="/Home">
+      <Home />
+    </Route>
+
+    <Route path="/mentor">
+      <MentorInfo />
+    </Route>
+  </Switch>
 );
 
 export default Routes;

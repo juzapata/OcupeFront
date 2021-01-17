@@ -2,12 +2,12 @@ import React from 'react';
 
 const Cta = (props) => {
   return <a 
-            id={props.id} 
-            href={props.href} 
-            className={`${props.classNameCta}`} 
-            onClick={props.onClick}>
-            <i className={props.icon}></i>
-            {props.text}           
+          id={props.id} 
+          href={props.href} 
+          className={`${props.classNameCta}`} 
+          onClick={props.onClick}>
+          <i className={props.icon}></i>
+          {props.text}           
         </a>
 }
 

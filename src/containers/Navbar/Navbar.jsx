@@ -4,7 +4,7 @@ import Image from '../../components/base/Image';
 
 const Navbar = () => {
   return (
-      <div>
+      <>
          <nav className="navbar">
           <i className="fas fa-user-circle"></i>
           <Image
@@ -12,7 +12,7 @@ const Navbar = () => {
             src="./text-logo-navbar.svg"
             alt="Logo Texto"/>
         </nav>
-      </div>
+      </>
   )
 }
 
