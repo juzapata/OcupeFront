@@ -1,0 +1,20 @@
+.card-body {
+  .card-header{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+
+    .card-header-title {
+      width: 70%;
+    }
+    image {
+      width: 30%;
+    }
+  }
+  .card-text {
+    @include font (16px, 500, 20px);
+    margin: 20px 0;
+    font-style: italic;
+    color: $graffiti-text;
+  }
+}

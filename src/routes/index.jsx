@@ -7,8 +7,8 @@ import Login from './Login';
 const Routes = () => (
 //   <Switch>
     // <Route exact path="/">
-      // <Home />
-      <Login />
+      <Home />
+      // <Login />
     // </Route>
 //   </Switch>
 );
