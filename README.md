@@ -11,10 +11,7 @@ Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
 * [Principais Tecnologias](#principais-tecnologias)
 * [Organização/Planejamento](#organização/planejamento)
 * [Definição do produto](#definição-do-produto)
-* [Personas](#personas)
-* [Histórias dos usuários](#histórias-dos-usuários)
-  * [Requisitos Obrigatórios](#requisitos-obrigatórios)
-  * [Definição de pronto](#definição-de-pronto)
+* [Aplicação](#aplicação)
 * [Protótipo](#protótipo)
 * [Roadmap](#roadmap)
 
@@ -46,13 +43,11 @@ Projeto final do Hackathon CCR - 2ª edição, realizado em grupo, em 2021.
   ```` 
     email: laura@gmail.com
     senha: 1234
-
   ````
   ou
   ````
     email: joana@gmail.com
     senha: 5678
-
   ````
 
 ### Principais Tecnologias
@@ -87,9 +82,6 @@ A Comunicação entre mentor e mentorado: Contato por WhatsApp e email.
 Monetização: Empresas que tenham interesse em contratar pessoas no seu primeiro emprego, estagiários e afins. Empresas que queiram fazer parcerias de cursos profissionalizantes com a aplicação etc.
 Divulgação: redes sociais, influenciar educacionais, boca a boca.
 
-## Personas
-[Personas](em breve...)
-
 ## Critérios de Avaliação dos Projetos
 **Os Projetos apresentados serão avaliados segundo as seguintes premissas:**
 1. Adequação ao tema, desafio e objetivo propostos;
@@ -98,15 +90,12 @@ Divulgação: redes sociais, influenciar educacionais, boca a boca.
 4. Qualidade e avanço no desenvolvimento do protótipo conceitual;
 5. Viabilidade de execução real da solução desenvolvida.
 
-## Histórias dos usuários 
 
-  **Requisitos Obrigatórios**
+## Aplicação
 
-1. Eu como usuário gostaria ter...
+A aplicação da Ocupe, pode ser acessada no link abaixo:
 
-### Definição de pronto
-
-* Implementar as funcionalidades até  .
+[Aplicação publicada](https://ocupe-frontend.herokuapp.com/)
 
 ## Protótipo
 
