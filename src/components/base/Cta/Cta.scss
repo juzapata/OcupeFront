@@ -12,7 +12,6 @@
     @include cta-type(100%, 0, $success-green);
     @include font (14px, 400, auto);
     display: flex;
-    
     &--back {
       margin-top: 24px;
       color: $text-block-gray;

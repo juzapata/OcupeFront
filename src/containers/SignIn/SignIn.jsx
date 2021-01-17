@@ -4,25 +4,8 @@ import Button from '../../components/base/Button';
 import Input from '../../components/base/Input';
 import Image from '../../components/base/Image';
 import Cta from '../../components/base/Cta';
-import { Link } from 'react-router-dom';
-
-// const initialValues = {
-//   email: "",
-//   senha: "",
-// }
 
 const SignIn = () => {
-  // const [values, setValues] = useState(initialValues);
-
-  // const handleLogin = (e) => { 
-  //   const { name, value } = e.target;
-    
-  //   setValues({
-  //     ...values,
-  //     [name]: value,
-  //   });
-  //   console.log(values)
-  // }
   const [inputEmailValue, setInputEmailValue] = useState('');
   const [inputPasswordValue, setInputPasswordValue] = useState('');
   const [mentorados, setMentorados] = useState([]);
@@ -41,20 +24,10 @@ const SignIn = () => {
   fetchData();
 }, []);
 
-  const handleEmailValue = (e) => {
-    let inputValue = e.target.value; 
-    setInputEmailValue(inputValue);
-  }
-
-  const handlePasswordValue = (e) => {
-    let inputValue = e.target.value; 
-    setInputPasswordValue(inputValue);
-  }
-
   const clickLogin = (e) => {
     e.preventDefault();
-      if((inputEmailValue === mentorados[0].contact.email && inputPasswordValue == mentorados[0].password) ||
-          (inputEmailValue === mentorados[1].contact.email && inputPasswordValue == mentorados[1].password)) {
+      if((inputEmailValue === mentorados[0].contact.email && Number(inputPasswordValue) === mentorados[0].password) ||
+          (inputEmailValue === mentorados[1].contact.email && Number(inputPasswordValue) === mentorados[1].password)) {
         history.push('/home');
       } else {
         alert('Dados incorretos!');
@@ -74,13 +47,13 @@ const SignIn = () => {
           placeholder="seuemail@exemplo.com"
           type="email"
           name="email"
-          onChange= {(e) => handleEmailValue(e)}/>
+          onChange= {(e) => setInputEmailValue(e.target.value)}/>
         <Input
           label="Senha"
           placeholder="mínimo 6 caracteres"
           type="password"
           name="senha"
-          onChange= {(e) => handlePasswordValue(e)}/>
+          onChange= {(e) => setInputPasswordValue(e.target.value)}/>
           <Button 
           type="submit"
           classNameBtn="btn__primary"
