@@ -1,12 +1,27 @@
 .image {
   &__banner {
-    margin: 15px 0 0px 0;
-    @media (min-width: 1024px){
-      width: 300px;
+    &-home {
+      width: 80%;
+      height: 40vh;
+      display: flex;
+      position: fixed;
+      bottom: 0;
+
+      @media (min-width: 768px){
+        height: 50vh;
+      }
+
+      @media (min-width: 1024px){
+        width: auto;
+        height: 80vh;
+        position: unset;
+      }
     }
   }
   &__photo-mentor {
-    min-width: 100px;
-    margin-right: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
   }
 }

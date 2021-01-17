@@ -22,13 +22,13 @@ const SignIn = () => {
   // }, [productSelected])
 
   return (    
-    <>
+    <div className="sign__group">
       <Image
         classNameImage="image__banner"
         src="/banner-login.svg"
         alt="Banner Login"
       />
-      <form>
+      <form className="sign__form">
         <Input
           label="E-mail"
           placeholder="seuemail@exemplo.com"
@@ -41,7 +41,7 @@ const SignIn = () => {
         />
         <Button 
           type="submit"
-          classNameBtn="btn__primary btn__primary--bigger"
+          classNameBtn="btn__primary"
           text="Entrar"
         />
         <Cta
@@ -50,7 +50,7 @@ const SignIn = () => {
           text="Cadastre-se"
         />
       </form>
-    </>
+    </div>
   )
 }
 
