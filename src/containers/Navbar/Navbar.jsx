@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from '../../components/base/Image';
 
-
 const Navbar = () => {
   return (
       <div>
